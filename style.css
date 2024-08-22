@@ -1,0 +1,134 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+.left img{
+    width: 53px;
+    height: 53px;
+}
+.container{
+    padding: 0 5vw;
+    height: 80px;
+}
+nav ul li{
+    list-style: none;
+    padding: 0 12px;
+    font-size: 12px;
+    color: #282c3f;
+}
+header{
+    position: sticky;
+    top: 0;
+    background: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+nav{
+    padding: 13px 0;
+}
+.searchBar{    
+    width: 360px;
+    padding: 12px 12px;
+    background: #f5f5f6;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+.userIcon{
+    display: flex;
+    flex-direction: column;
+}
+.userIcon .Icon{
+    font-size: 12px;
+    font-weight: bold;
+    color: #282c3f;
+}
+.bannerSection{
+    padding: 0 3vw;
+}
+
+.bannerSection img{
+    width: 94vw;
+}
+.productsStrip{
+    display: flex;
+}
+.productsStrip img{
+    width: 16.5vw;
+    padding: 0;
+}
+.textBanner{
+    padding: 0 3vw;
+    margin: 5vh 0;
+
+}
+.textBanner h1{
+    text-transform: uppercase;
+    color: #3e4152;
+}
+footer{
+    background: #fafbfc;
+    padding: 15px;
+    color: #3e4152;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+/*Media Query to make site responsive    */
+@media only screen and (max-width: 1200px){
+    .searchBar{
+        width:225px;
+    }
+}
+@media only screen and (max-width: 1050px){
+    nav{
+        flex-direction: column;
+    align-items: center;
+    }
+    .container{
+        height: 115px;
+    }
+    .textBanner h1{
+        font-size: x-large;
+    }
+}
+@media only screen and (max-width: 530px){
+    nav ul li{
+        padding: 0px 7px;
+        font-size: 12px;
+    }
+    nav{
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 500px){
+    nav{
+        align-items: stretch;
+    }
+    .container{
+        height: 70px;
+    }
+    nav ul li{
+        display: none;
+    }
+    .searchBar, .userIcon{
+        display: none;
+    }
+    .textBanner h1{
+        font-size: medium;
+    }
+    .productsStrip{
+        flex-wrap: wrap;
+        padding: 2vw;
+    }
+    .productsStrip img{
+        width: 45vw;
+        padding: 1.5vw;
+    }
+}
